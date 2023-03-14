@@ -1,0 +1,63 @@
+.col-lg-3 {
+  margin: 25px;
+}
+#container {
+  position: center;
+
+  padding-left: 12%;
+}
+.card {
+  position: relative;
+  max-height: max-content;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem; /* Adjust the padding as needed */
+  border-radius: 50px;
+
+  background-size: cover;
+  background-position: center center;
+  margin-right: 0.5rem;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  font-size: 0;
+}
+
+.btn-primary:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-primary:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group:hover .btn-primary {
+  transform: scale(1);
+}
+
+.btn-group:hover .btn-primary:hover {
+  transform: scale(2);
+  z-index: 1;
+  font-size: 1.2rem; /* Add font-size to make text bigger on hover */
+  background-image: none !important;
+  background-color: #f8f9fa;
+  color: black;
+}
