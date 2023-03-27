@@ -24,9 +24,9 @@ fetch("https://restcountries.com/v3.1/all")
         <img src=${element.flags.png} class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">${element.name.official}</h5>
-          <p class="card-text">
+          <a class="card-text" href="${element.maps.googleMaps}">
             ${element.maps.googleMaps}
-          </p>
+          </a>
           <div/>
           <div class="card-footer text-center">
   <div class="btn-group">
